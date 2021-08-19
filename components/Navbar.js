@@ -17,11 +17,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.sidebar}>
+    <div className={openNav ? styles.sidebarOpen : styles.sidebarClose}>
       <nav>
         <FaAlignCenter
           className={styles.sidebarIcon}
-          size={"15%"}
+          size={40}
           onClick={openAndClose}
         />
         <div>

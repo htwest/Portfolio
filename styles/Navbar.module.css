@@ -1,8 +1,7 @@
 /* Sidebar Menu */
-.sidebar {
+.sidebarClose {
   height: 100%; /* 100% Full-height */
-  width: auto;
-  max-width: 15%; /* 0 width - change this with JavaScript */
+  width: 5%; /* Closed Width */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
@@ -14,55 +13,46 @@
   text-align: center;
 }
 
+.sidebarOpen {
+  height: 100%;
+  width: 15%; /* Open Width */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: center;
+}
+
 /* Sidebar Icon */
 .sidebarIcon {
   color: whitesmoke;
-  margin: 0;
 }
 
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
+.sidebarIcon :hover {
   color: #818181;
-  display: block;
-  transition: 0.3s;
 }
 
 /* Sidebar Links */
 .icons {
   color: white;
-  display: block;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  transition: none;
+  margin-left: 5%;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
+.icons :hover {
+  color: red;
 }
 
-/* Position and style the close button (top right corner) */
-
-/* .sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
-
-/* The button used to open the sidebar */
-
-/* .openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #111;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-} */
-
-/* .openbtn:hover {
-  background-color: #444;
-} */
+/* Sidebar Text */
+.icons span {
+  margin-left: 3%;
+}
+.icons span:hover {
+  color: whitesmoke;
+}
