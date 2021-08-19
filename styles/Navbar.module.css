@@ -30,6 +30,7 @@
 /* Sidebar Icon */
 .sidebarIcon {
   color: whitesmoke;
+  margin-bottom: 200px;
 }
 
 .sidebarIcon :hover {
@@ -41,8 +42,9 @@
   color: white;
   display: flex;
   align-items: center;
-  transition: none;
-  margin-left: 5%;
+  transition: 0s;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .icons :hover {
