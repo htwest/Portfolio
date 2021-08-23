@@ -2,24 +2,32 @@
   min-height: 100vh;
   height: 100vh;
   background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.imgContainer {
-  float: right;
-  padding-top: 5%;
-  padding-right: 10%;
-  padding-left: 5%;
-  padding-bottom: 5%;
-  background-color: aqua;
+.img {
+  max-height: 480px;
+  height: 480px;
+  padding: 40px;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
 }
 
-.header {
-  text-align: center;
+.text {
+  width: 30%;
+  height: auto;
+  border: brown;
+  border-style: dotted;
+  margin-right: 10%;
+  display: flex;
 }
 
-.header p {
-  display: inline-block;
-  /* margin-top: 25%; */
+.text p {
+  width: 100%;
 }
 
 @media (max-width: 600px) {
