@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 
 import {
@@ -26,7 +27,9 @@ const Navbar = () => {
         />
         <div>
           <div className={styles.icons}>
-            <FaJediOrder size={40} />
+            <Link href="/#about-me">
+              <FaJediOrder size={40} />
+            </Link>
             {openNav ? <span> Go Here</span> : null}
           </div>
           <div className={styles.icons}>
