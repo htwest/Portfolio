@@ -12,8 +12,7 @@ import {
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
 
-  const openAndClose = (e) => {
-    console.log("works");
+  const openAndClose = () => {
     setOpenNav(!openNav);
   };
 
@@ -30,15 +29,15 @@ const Navbar = () => {
             <Link href="/#about-me">
               <FaJediOrder size={40} />
             </Link>
-            {openNav ? <span> Go Here</span> : null}
+            {openNav ? <span> About</span> : null}
           </div>
           <div className={styles.icons}>
             <FaBalanceScale size={40} />
-            {openNav ? <span> Another Link</span> : null}
+            {openNav ? <span> Links</span> : null}
           </div>
           <div className={styles.icons}>
             <FaChessKnight size={40} />
-            {openNav ? <span> What is This?</span> : null}
+            {openNav ? <span> Skills</span> : null}
           </div>
         </div>
       </nav>
