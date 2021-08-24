@@ -1,8 +1,10 @@
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Home({ openNav }) {
+  console.log(openNav);
+
   return (
-    <div className={styles.container}>
+    <div className={openNav ? styles.containerOpen : styles.containerClose}>
       <div className={styles.header}>
         <div className={styles.text}>
           <p>TESTER TESTER</p>

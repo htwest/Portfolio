@@ -9,9 +9,7 @@ import {
   FaChessKnight,
 } from "react-icons/fa";
 
-const Navbar = () => {
-  const [openNav, setOpenNav] = useState(false);
-
+const Navbar = ({ openNav, setOpenNav }) => {
   const openAndClose = () => {
     setOpenNav(!openNav);
   };
