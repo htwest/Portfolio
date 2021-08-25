@@ -1,8 +1,6 @@
 import styles from "../styles/Home.module.css";
 
 export default function Home({ openNav }) {
-  console.log(openNav);
-
   return (
     <div className={openNav ? styles.containerOpen : styles.containerClose}>
       <div className={styles.header}>
