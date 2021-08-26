@@ -17,18 +17,50 @@
 
 /* Test Animations */
 
-.box {
+.boxOne {
   width: 100px;
   height: 100px;
   background-color: red;
   position: fixed;
   top: -100px;
   left: -100px;
-  animation: fall-in-one 1s ease-in forwards;
+  animation: fall-in 0.5s ease-in forwards;
 }
 
-@keyframes fall-in-one {
+.boxTwo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  bottom: -100px;
+  right: 45%;
+  animation: push-up 0.5s 0.5s ease-in forwards;
+}
+
+.boxThree {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  bottom: 40%;
+  right: -100px;
+  animation: push-in 0.5s 1s ease-in forwards;
+}
+
+@keyframes fall-in {
   100% {
     transform: translate(400%, 800%);
+  }
+}
+
+@keyframes push-up {
+  100% {
+    transform: translate(700%, -300%);
+  }
+}
+
+@keyframes push-in {
+  100% {
+    transform: translate(-500%, -350%);
   }
 }
