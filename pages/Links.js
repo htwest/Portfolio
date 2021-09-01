@@ -32,7 +32,7 @@ const Links = ({ openNav }) => {
       <div className={styles.cardContainer}>
         <div
           id="cardOne"
-          className={cardOne ? styles.cardHovered : styles.card}
+          className={cardOne ? styles.cardHovered : styles.cardOne}
           onMouseEnter={hover}
           onMouseLeave={hover}
         >
@@ -40,7 +40,7 @@ const Links = ({ openNav }) => {
         </div>
         <div
           id="cardTwo"
-          className={cardTwo ? styles.cardHovered : styles.card}
+          className={cardTwo ? styles.cardHovered : styles.cardTwo}
           onMouseEnter={hover}
           onMouseLeave={hover}
         >
@@ -48,7 +48,7 @@ const Links = ({ openNav }) => {
         </div>
         <div
           id="cardThree"
-          className={cardThree ? styles.cardHovered : styles.card}
+          className={cardThree ? styles.cardHovered : styles.cardThree}
           onMouseEnter={hover}
           onMouseLeave={hover}
         >

@@ -24,37 +24,89 @@
   align-items: center;
 }
 
-.card {
+/* .card {
   width: 200px;
   height: 300px;
   background-color: blueviolet;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
   margin: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+} */
+
+.cardOne {
+  width: 200px;
+  height: 300px;
+  background-color: blueviolet;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(-10deg);
 }
 
-/* .card :hover {
-  width: 350px;
-  height: 400px;
+.cardTwo {
+  width: 200px;
+  height: 300px;
   background-color: blueviolet;
-} */
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  transform: translateY(-20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.cardThree {
+  width: 200px;
+  height: 300px;
+  background-color: blueviolet;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(10deg);
+}
 
 .cardHovered {
   width: 300px;
-  height: 400px;
+  height: 450px;
   background-color: blueviolet;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
 /* Test Animations */
 
 .boxOne {
-  width: 100px;
+  width: 1200px;
   height: 100px;
+  transform: rotate(60deg);
   background-color: red;
   position: fixed;
-  top: -100px;
-  left: -100px;
+  top: -900px;
+  left: -1400px;
   animation: fall-in 0.5s ease-in forwards;
 }
 
@@ -80,7 +132,7 @@
 
 @keyframes fall-in {
   100% {
-    transform: translate(400%, 800%);
+    transform: translate(100%, 1300%) rotate(60deg);
   }
 }
 
