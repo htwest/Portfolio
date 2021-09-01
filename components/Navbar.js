@@ -30,7 +30,9 @@ const Navbar = ({ openNav, setOpenNav }) => {
             {openNav ? <span> About</span> : null}
           </div>
           <div className={styles.icons}>
-            <FaBalanceScale size={40} />
+            <Link href="/Links">
+              <FaBalanceScale size={40} />
+            </Link>
             {openNav ? <span> Links</span> : null}
           </div>
           <div className={styles.icons}>

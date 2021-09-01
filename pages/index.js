@@ -5,8 +5,8 @@ export default function Home({ openNav }) {
     <div className={openNav ? styles.containerOpen : styles.containerClose}>
       <div className={styles.header}>
         <div className={styles.text}>
-          <p>TESTER TESTER</p>
-          <p>TEST ALL THE THINGS</p>
+          <p>HELLO</p>
+          <p>MY NAME IS HAYDEN WEST</p>
         </div>
         <div className={styles.img}>
           <img src="/Smiley.png"></img>
