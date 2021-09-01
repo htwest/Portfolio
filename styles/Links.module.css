@@ -15,6 +15,37 @@
   transition: 0.5s;
 }
 
+/* Cards */
+
+.cardContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: blueviolet;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .card :hover {
+  width: 350px;
+  height: 400px;
+  background-color: blueviolet;
+} */
+
+.cardHovered {
+  width: 300px;
+  height: 400px;
+  background-color: blueviolet;
+}
+
 /* Test Animations */
 
 .boxOne {
