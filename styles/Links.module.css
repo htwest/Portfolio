@@ -111,13 +111,14 @@
 }
 
 .boxTwo {
-  width: 100px;
+  width: 650px;
   height: 100px;
+  transform: rotate(-40deg);
   background-color: red;
   position: fixed;
-  bottom: -100px;
-  right: 45%;
-  animation: push-up 0.5s 0.5s ease-in forwards;
+  bottom: -300px;
+  right: 30%;
+  animation: push-up 0.3s 0.5s ease-in forwards;
 }
 
 .boxThree {
@@ -125,7 +126,7 @@
   height: 100px;
   background-color: red;
   position: fixed;
-  bottom: 40%;
+  bottom: -200px;
   right: -100px;
   animation: push-in 0.5s 1s ease-in forwards;
 }
@@ -138,7 +139,7 @@
 
 @keyframes push-up {
   100% {
-    transform: translate(700%, -300%);
+    transform: translate(100%, -350%) rotate(-40deg);
   }
 }
 
