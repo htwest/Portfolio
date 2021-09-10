@@ -3,7 +3,9 @@
   background-color: transparent;
   width: 200px;
   height: 300px;
+  transform: translate(-398px, 5px);
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  animation: draw 0.5s ease-in forwards;
 }
 
 /* This container is needed to position the front and back side */
@@ -14,12 +16,14 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  animation: flip 0.5s ease-in forwards;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flipCard:hover .inner {
+
+/* .flipCard:hover .inner {
   transform: rotateY(180deg);
-}
+} */
 
 /* Position the front and back side */
 .front,
@@ -46,6 +50,26 @@
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+@keyframes draw {
+  from {
+    transform: translate(-398px, 5px);
+  }
+
+  to {
+    transform: translate(25%, 5px);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(180deg);
+  }
 }
 
 /* BACKUPS */
