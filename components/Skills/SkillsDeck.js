@@ -1,19 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import FlipCard from "./FlipCard";
+
+import fetchSkill from "../../hooks/fetchSkill";
 
 import styles from "../../styles/SkillsDeck.module.css";
 
 const SkillsDeck = () => {
-  const skills = ["java", "node", "HTML", "CSS"];
-  let index = 0;
-
   const [flipped, setFlipped] = useState(false);
   const [stacked, setStacked] = useState(false);
-  const [skill, setSkill] = useState(skills[0]);
+  const [skill, setSkill] = useState(null);
+
+  const isMounted = useRef(false);
+
+  useEffect(() => {
+    if (isMounted.current) {
+      if (skill !== undefined) {
+        setFlipped(true);
+      }
+    } else {
+      isMounted.current = true;
+    }
+  }, [skill]);
 
   const handleFlip = () => {
-    setFlipped(true);
+    let currentSkill = fetchSkill();
+    setSkill(currentSkill);
   };
 
   return (
