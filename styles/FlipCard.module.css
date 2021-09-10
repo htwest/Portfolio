@@ -49,6 +49,9 @@
 .back {
   background-color: dodgerblue;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotateY(180deg);
 }
 

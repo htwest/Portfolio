@@ -1,14 +1,13 @@
 import styles from "../../styles/FlipCard.module.css";
 
-const Flipcard = () => {
+const Flipcard = ({ skill }) => {
+  console.log(skill);
   return (
     <div className={styles.flipCard}>
       <div className={styles.inner}>
         <div className={styles.front}></div>
         <div className={styles.back}>
-          <h1>John Doe</h1>
-          <p>Architect and Engineer</p>
-          <p>We love that guy</p>
+          <h1>{skill}</h1>
         </div>
       </div>
     </div>
