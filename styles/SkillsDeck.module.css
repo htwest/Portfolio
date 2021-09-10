@@ -1,32 +1,8 @@
-/* Container settings */
-.containerClose {
-  min-height: 100vh;
-  height: 100vh;
-  background-color: burlywood;
-  margin-left: 5%;
-  transition: 0.5s;
-}
-
-.containerOpen {
-  min-height: 100vh;
-  height: 100vh;
-  background-color: burlywood;
-  margin-left: 15%;
-  transition: 0.5s;
-}
-
-.bodyContainer {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .deckContainer {
+.deckContainer {
   display: flex;
 }
 
-.secondCard {
+.topCard {
   width: 200px;
   height: 300px;
   transform: translateX(-200px);
@@ -41,7 +17,7 @@
   transition: 0.5s;
 }
 
-.topCard {
+.secondCard {
   width: 200px;
   height: 300px;
   transform: rotate(5deg);
@@ -54,4 +30,4 @@
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-} */
+}
