@@ -19,12 +19,6 @@
   animation: flip 0.5s ease-in forwards;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-
-/* .flipCard:hover .inner {
-  transform: rotateY(180deg);
-} */
-
 /* Position the front and back side */
 .front,
 .back {
@@ -34,7 +28,6 @@
   border: black;
   border-style: double;
   border-radius: 10px;
-  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 

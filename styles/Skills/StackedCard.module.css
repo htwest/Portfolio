@@ -1,0 +1,19 @@
+.stackedCard {
+  background-color: dodgerblue;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(245px, 5px);
+}
+
+.inner {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

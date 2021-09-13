@@ -21,39 +21,3 @@
   justify-content: center;
   align-items: center;
 }
-
-/* BACKUPS */
-
-/* .deckContainer {
-  display: flex;
-}
-
-.secondCard {
-  width: 200px;
-  height: 300px;
-  transform: translateX(-200px);
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.topCard {
-  width: 200px;
-  height: 300px;
-  transform: rotate(5deg);
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-} */

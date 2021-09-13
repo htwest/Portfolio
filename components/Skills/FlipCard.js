@@ -1,4 +1,4 @@
-import styles from "../../styles/FlipCard.module.css";
+import styles from "../../styles/Skills/FlipCard.module.css";
 
 const Flipcard = ({ skill }) => {
   return (
