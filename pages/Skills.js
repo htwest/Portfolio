@@ -1,31 +1,17 @@
 import { useState } from "react";
-import fetchSkill from "../hooks/fetchSkill";
 
-import styles from "../styles/Skills.module.css";
+import SkillsDeck from "../components/Skills/SkillsDeck";
 
-const Skills = ({ openNav }) => {
-  const [skill, setSkill] = useState(null);
+import styles from "../styles/Skills/Skills.module.css";
 
-  const getSkill = () => {
-    let skill = fetchSkill() || 1;
-    console.log(skill);
-    setSkill(skill);
-  };
-
+const Test = ({ openNav }) => {
   return (
     <div className={openNav ? styles.containerOpen : styles.containerClose}>
       <div className={styles.bodyContainer}>
-        <div>
-          <h1>GENERATE SKILL</h1>
-          <button onClick={getSkill}>Click</button>
-        </div>
-        <div>
-          <h3>The Skill Is</h3>
-          <p>{skill}</p>
-        </div>
+        <SkillsDeck />
       </div>
     </div>
   );
 };
 
-export default Skills;
+export default Test;

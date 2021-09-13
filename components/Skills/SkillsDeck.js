@@ -5,7 +5,7 @@ import StackedCard from "./StackedCard";
 
 import fetchSkill from "../../hooks/fetchSkill";
 
-import styles from "../../styles/SkillsDeck.module.css";
+import styles from "../../styles/Skills/SkillsDeck.module.css";
 
 const SkillsDeck = () => {
   const [flipped, setFlipped] = useState(false);

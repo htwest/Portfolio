@@ -36,7 +36,9 @@ const Navbar = ({ openNav, setOpenNav }) => {
             {openNav ? <span> Links</span> : null}
           </div>
           <div className={styles.icons}>
-            <FaChessKnight size={40} />
+            <Link href="/Skills">
+              <FaChessKnight size={40} />
+            </Link>
             {openNav ? <span> Skills</span> : null}
           </div>
         </div>
