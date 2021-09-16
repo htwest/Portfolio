@@ -1,0 +1,92 @@
+/* Cards */
+
+.cardContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardOne {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(-10deg);
+}
+
+.cardTwo {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  transform: translateY(-20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.cardThree {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(10deg);
+}
+
+.cardOne img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardTwo img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardThree img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardHovered {
+  width: 300px;
+  height: 450px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.cardHovered img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
