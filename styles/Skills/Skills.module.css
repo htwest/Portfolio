@@ -27,5 +27,5 @@
   margin-top: 10%;
   max-width: 200px;
   height: auto;
-  background-color: whitesmoke;
+  transform: rotate(15deg);
 }

@@ -1,7 +1,15 @@
+import fetchAllSkills from "../../hooks/fetchAllSkills";
+import SkillCard from "./SkillCard";
+
+import styles from "../../styles/Skills/Layout.module.css";
+
 const Layout = () => {
+  let skills = fetchAllSkills();
   return (
-    <div>
-      <h1>This Renders Correctly</h1>
+    <div className={styles.container}>
+      {skills.map((skill, index) => (
+        <SkillCard skill={skill} key={index} />
+      ))}
     </div>
   );
 };
