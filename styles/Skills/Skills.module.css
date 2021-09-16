@@ -29,3 +29,19 @@
   height: auto;
   transform: rotate(15deg);
 }
+
+.loader {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  height: auto;
+  transform: rotateY(-180deg);
+  animation: rotate 3s ease-in infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(180deg);
+  }
+}

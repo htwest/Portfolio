@@ -2,7 +2,7 @@
 .containerClose {
   min-height: 100vh;
   height: 100vh;
-  background-color: burlywood;
+  background-image: url("/Links/LinksBackground.png");
   margin-left: 5%;
   transition: 0.5s;
 }
@@ -10,7 +10,7 @@
 .containerOpen {
   min-height: 100vh;
   height: 100vh;
-  background-color: burlywood;
+  background-image: url("/Links/LinksBackground.png");
   margin-left: 15%;
   transition: 0.5s;
 }
@@ -22,6 +22,140 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cardOne {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(-10deg);
+}
+
+.cardTwo {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  transform: translateY(-20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.cardThree {
+  width: 200px;
+  height: 300px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: rotate(10deg);
+}
+
+.cardOne img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardTwo img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardThree img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.cardHovered {
+  width: 300px;
+  height: 450px;
+  background-color: whitesmoke;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+.cardHovered img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+/* Link Animations */
+
+.boxOne {
+  width: 900px;
+  height: 100px;
+  transform: rotate(60deg);
+  position: fixed;
+  top: -900px;
+  left: -1400px;
+  animation: fall-in 0.5s ease-in forwards;
+}
+
+.boxTwo {
+  width: 900px;
+  height: 100px;
+  transform: rotate(-40deg);
+  position: fixed;
+  bottom: -400px;
+  right: 30%;
+  animation: push-up 0.3s 0.5s ease-in forwards;
+}
+
+.boxThree {
+  width: 900px;
+  height: 100px;
+  transform: rotate(30deg);
+  position: fixed;
+  bottom: 300px;
+  right: -900px;
+  animation: push-in 0.3s 0.9s ease-in forwards;
+}
+
+@keyframes fall-in {
+  100% {
+    transform: translate(135%, 1400%) rotate(60deg);
+  }
+}
+
+@keyframes push-up {
+  100% {
+    transform: translate(70%, -450%) rotate(-40deg);
+  }
+}
+
+@keyframes push-in {
+  100% {
+    transform: translate(-70%, -350%) rotate(30deg);
+  }
 }
 
 /* .card {
@@ -37,116 +171,3 @@
   align-items: center;
   transition: 0.5s;
 } */
-
-.cardOne {
-  width: 200px;
-  height: 300px;
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transform: rotate(-10deg);
-}
-
-.cardTwo {
-  width: 200px;
-  height: 300px;
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  transform: translateY(-20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.cardThree {
-  width: 200px;
-  height: 300px;
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transform: rotate(10deg);
-}
-
-.cardHovered {
-  width: 300px;
-  height: 450px;
-  background-color: blueviolet;
-  border: black;
-  border-style: double;
-  border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  z-index: 1000;
-}
-
-/* Test Animations */
-
-.boxOne {
-  width: 1200px;
-  height: 100px;
-  transform: rotate(60deg);
-  background-color: red;
-  position: fixed;
-  top: -900px;
-  left: -1400px;
-  animation: fall-in 0.5s ease-in forwards;
-}
-
-.boxTwo {
-  width: 650px;
-  height: 100px;
-  transform: rotate(-40deg);
-  background-color: red;
-  position: fixed;
-  bottom: -300px;
-  right: 30%;
-  animation: push-up 0.3s 0.5s ease-in forwards;
-}
-
-.boxThree {
-  width: 700px;
-  height: 100px;
-  background-color: red;
-  transform: rotate(30deg);
-  position: fixed;
-  bottom: 300px;
-  right: -700px;
-  animation: push-in 0.3s 0.9s ease-in forwards;
-}
-
-@keyframes fall-in {
-  100% {
-    transform: translate(100%, 1300%) rotate(60deg);
-  }
-}
-
-@keyframes push-up {
-  100% {
-    transform: translate(100%, -350%) rotate(-40deg);
-  }
-}
-
-@keyframes push-in {
-  100% {
-    transform: translate(-75%, -320%) rotate(30deg);
-  }
-}

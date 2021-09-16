@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import SkillsDeck from "../components/Skills/SkillsDeck";
 import Layout from "../components/Skills/Layout";
+import ClubIcon from "../components/Skills/ClubIcon";
 
 import fetchSkill from "../hooks/fetchSkill";
 
@@ -27,9 +28,12 @@ const Test = ({ openNav }) => {
           alt="dealerChip"
           onClick={handleClick}
         />
+        <img className={styles.loader} src="/Skills/ClubIcon.png" />
       </div>
     </div>
   );
 };
 
 export default Test;
+
+// {/* <ClubIcon /> */}
