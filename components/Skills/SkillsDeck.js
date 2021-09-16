@@ -49,10 +49,20 @@ const SkillsDeck = () => {
   return (
     <div className={styles.deckContainer}>
       {oneLeft ? null : (
-        <div className={styles.secondCard} onClick={handleFlip}></div>
+        <img
+          className={styles.secondCard}
+          src="Skills/cardFinal.png"
+          alt="card-back"
+          onClick={handleFlip}
+        />
       )}
       {lastCard ? null : (
-        <div className={styles.topCard} onClick={handleFlip}></div>
+        <img
+          className={styles.topCard}
+          src="Skills/cardFinal.png"
+          alt="card-back"
+          onClick={handleFlip}
+        />
       )}
       {stacked ? <StackedCard prevSkill={prevSkill} /> : null}
       {flipped ? <FlipCard skill={skill} /> : null}
@@ -61,3 +71,9 @@ const SkillsDeck = () => {
 };
 
 export default SkillsDeck;
+
+// Top Card = inital top card seen on render
+// Last Card = last unflipped card seen when one skill remains
+
+// Stacked Card = Card underneith the newly flipped card
+// Flip Card = the Card that appears when deck is clicked

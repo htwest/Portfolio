@@ -18,6 +18,14 @@
 .bodyContainer {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dealerChip {
+  margin-top: 10%;
+  max-width: 200px;
+  height: auto;
+  background-color: whitesmoke;
 }

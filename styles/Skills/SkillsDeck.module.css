@@ -4,16 +4,12 @@
 
 .topCard {
   width: 200px;
-  height: 300px;
+  height: auto;
   transform: translateX(-200px);
-  background-color: blueviolet;
+  margin: 1%;
   border: black;
   border-style: double;
   border-radius: 10px;
-  margin: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.5s;
 }
 
@@ -26,8 +22,20 @@
   border-style: double;
   border-radius: 10px;
   margin: 1%;
+  transition: 0.5s;
+}
+
+/* .topCard {
+  width: 200px;
+  height: 300px;
+  transform: translateX(-200px);
+  background-color: blueviolet;
+  border: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-}
+} */
