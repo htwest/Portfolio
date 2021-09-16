@@ -2,7 +2,7 @@
 .containerClose {
   min-height: 100vh;
   height: 100vh;
-  background-color: burlywood;
+  background-image: url("/Skills/SkillsBackground.png");
   margin-left: 5%;
   transition: 0.5s;
 }
@@ -10,7 +10,7 @@
 .containerOpen {
   min-height: 100vh;
   height: 100vh;
-  background-color: burlywood;
+  background-image: url("/Skills/SkillsBackground.png");
   margin-left: 15%;
   transition: 0.5s;
 }
