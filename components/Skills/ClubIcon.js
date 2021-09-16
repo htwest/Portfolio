@@ -3,7 +3,8 @@ import styles from "../../styles/Skills/ClubIcon.module.css";
 const ClubIcon = () => {
   return (
     <div className={styles.container}>
-      <img className={styles.img} src="/Skills/ClubIcon.png" />
+      <h3 className={styles.text}>Pick A Card</h3>
+      <img className={styles.icon} src="/Skills/ClubIcon.png" />
     </div>
   );
 };

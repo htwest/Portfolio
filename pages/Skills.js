@@ -28,12 +28,10 @@ const Test = ({ openNav }) => {
           alt="dealerChip"
           onClick={handleClick}
         />
-        <img className={styles.loader} src="/Skills/ClubIcon.png" />
+        <ClubIcon />
       </div>
     </div>
   );
 };
 
 export default Test;
-
-// {/* <ClubIcon /> */}

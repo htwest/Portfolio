@@ -27,21 +27,15 @@
   margin-top: 10%;
   max-width: 200px;
   height: auto;
-  transform: rotate(15deg);
+  transform: rotate(-10deg);
+  animation: bounce 2.5s ease-in infinite;
 }
 
-.loader {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 100px;
-  height: auto;
-  transform: rotateY(-180deg);
-  animation: rotate 3s ease-in infinite;
-}
-
-@keyframes rotate {
+@keyframes bounce {
+  50% {
+    transform: rotate(10deg);
+  }
   100% {
-    transform: rotateY(180deg);
+    transform: rotate(-10deg);
   }
 }
