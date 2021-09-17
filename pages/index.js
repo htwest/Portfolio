@@ -9,7 +9,7 @@ export default function Home({ openNav }) {
           <p>MY NAME IS HAYDEN WEST</p>
         </div>
         <div className={styles.img}>
-          <img src="/Smiley.png"></img>
+          <img className={styles.homeCard} src="/HomeCard.png"></img>
         </div>
       </div>
       <div className={styles.about}>
