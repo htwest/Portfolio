@@ -14,30 +14,20 @@ export default function Home({ openNav }) {
       </div>
       <div className={styles.about}>
         <div className={styles.bio}>
-          <h5 id="about-me">About Me</h5>
+          <h3 id="about-me">About Me</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ex
-            neque, tempor et diam ac, sodales commodo felis. Maecenas maximus
-            nulla a est pulvinar, at facilisis nunc molestie. Nunc hendrerit non
-            velit at iaculis. Nulla finibus metus eget quam fermentum, at
-            malesuada justo porttitor. Aenean finibus nisl et mattis imperdiet.
-            Pellentesque vel congue mi. Etiam sed venenatis erat.
+            Ever since I was young, I've enjoyed creating. Whether that be
+            through writing or art, or most recently, through software, my
+            passion to build has been an integral part of my life. Though I am
+            new to the computer sciences, my creative energies are well suited
+            to the tasks required. Combined with my prior experience with
+            interacting with a demanding customer base, I feel like I am right
+            at home in this field.
           </p>
           <br />
           <p>
-            Nunc et elementum ante. Proin feugiat finibus sodales. Maecenas eget
-            lacus ligula. Proin dapibus, dui sit amet suscipit consectetur,
-            nulla ex tempus enim, vel laoreet elit ex ac quam. Mauris mi augue,
-            cursus vitae justo at, lacinia tempor augue. Curabitur purus erat,
-            congue non porta in, facilisis in risus. Praesent euismod vel odio a
-            feugiat. Aenean tincidunt, metus id pretium gravida, augue sapien
-            consequat eros, a mollis neque velit in mauris. Sed egestas tortor
-            at eros pellentesque vestibulum. Proin vulputate condimentum diam,
-            in ullamcorper nunc tempus in. Aenean at eros mi. Donec laoreet,
-            orci in aliquet venenatis, ante lectus imperdiet nulla, id semper
-            sapien felis quis mauris. Donec non lectus ut augue lobortis
-            vestibulum. In convallis felis lectus, sed aliquam velit accumsan a.
-            Vestibulum eu vestibulum nulla, sed suscipit mauris.
+            Motivated and eager to learn, I hope to one day channel my creative
+            passion and software skills into a lifelong career
           </p>
         </div>
       </div>

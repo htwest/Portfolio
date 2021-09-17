@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One");
+
 .containerClose {
   min-height: 100%;
   height: 100%;
@@ -46,6 +49,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: "Rubik Mono One";
 }
 
 .text p {
@@ -63,6 +67,8 @@
   margin-left: 10%;
   margin-right: 20%;
   color: whitesmoke;
+  font-family: "Lilita One";
+  font-size: large;
 }
 
 @media (max-width: 600px) {
