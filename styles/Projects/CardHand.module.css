@@ -1,3 +1,4 @@
 .hand {
   display: flex;
+  transform: translateY(200px);
 }

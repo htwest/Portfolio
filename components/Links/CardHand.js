@@ -14,15 +14,12 @@ const CardHand = () => {
     let card = e.target.id;
     if (card === "imgOne") {
       setCardOne(!cardOne);
-      console.log(cardOne);
     }
     if (card === "imgTwo") {
       setCardTwo(!cardTwo);
-      console.log(cardTwo);
     }
     if (card === "imgThree") {
       setCardThree(!cardThree);
-      console.log(cardThree);
     }
   };
 
