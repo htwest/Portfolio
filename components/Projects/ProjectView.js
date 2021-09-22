@@ -1,11 +1,11 @@
+import styles from "../../styles/Projects/ProjectView.module.css";
+
 const ProjectView = ({ project }) => {
   return (
-    <div>
-      <div>
-        <p>Title: {project.title}</p>
-        <p>Sumary: {project.summary}</p>
-        <p>Link: {project.link}</p>
-      </div>
+    <div className={styles.container}>
+      <h3>{project.title}</h3>
+      <p>{project.summary}</p>
+      <p>{project.link}</p>
     </div>
   );
 };

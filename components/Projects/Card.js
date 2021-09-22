@@ -15,7 +15,9 @@ const Card = ({ handleClick, project }) => {
       onMouseEnter={hover}
       onMouseLeave={hover}
       onClick={() => handleClick(project)}
-    ></div>
+    >
+      <div>{project.title}</div>
+    </div>
   );
 };
 
