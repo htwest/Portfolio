@@ -1,0 +1,22 @@
+/* Container settings */
+.containerClose {
+  min-height: 100vh;
+  height: 100vh;
+  background-color: aqua;
+  margin-left: 5%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerOpen {
+  min-height: 100vh;
+  height: 100vh;
+  background-color: aqua;
+  margin-left: 15%;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
