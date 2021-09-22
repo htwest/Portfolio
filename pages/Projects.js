@@ -8,13 +8,13 @@ import styles from "../styles/Projects/Projects.module.css";
 const Projects = ({ openNav }) => {
   const [project, setProject] = useState(null);
 
-  const handleClick = () => {
-    setProject(true);
+  const handleClick = (project) => {
+    setProject(project);
   };
 
   return (
     <div className={openNav ? styles.containerOpen : styles.containerClose}>
-      {project ? <ProjectView /> : null}
+      {project ? <ProjectView project={project} /> : null}
       <CardHand handleClick={handleClick} />
     </div>
   );

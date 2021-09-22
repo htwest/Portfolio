@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import Card from "./Card";
-
+import projects from "../../data/projects";
 import styles from "../../styles/Projects/CardHand.module.css";
 
 const CardHand = ({ handleClick }) => {
@@ -12,10 +12,10 @@ const CardHand = ({ handleClick }) => {
 
   return (
     <div className={styles.hand}>
-      <Card handleClick={handleClick} />
-      <Card handleClick={handleClick} />
-      <Card handleClick={handleClick} />
-      <Card handleClick={handleClick} />
+      <Card handleClick={handleClick} project={projects.weather} />
+      <Card handleClick={handleClick} project={projects.catwalk} />
+      <Card handleClick={handleClick} project={projects.gallery} />
+      <Card handleClick={handleClick} project={projects.crud} />
     </div>
   );
 };

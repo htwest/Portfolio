@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import styles from "../../styles/Projects/Card.module.css";
 
-const Card = ({ handleClick }) => {
+const Card = ({ handleClick, project }) => {
   const [selected, setSelected] = useState(false);
 
   const hover = () => {
@@ -14,7 +14,7 @@ const Card = ({ handleClick }) => {
       className={selected ? styles.selectedCard : styles.card}
       onMouseEnter={hover}
       onMouseLeave={hover}
-      onClick={handleClick}
+      onClick={() => handleClick(project)}
     ></div>
   );
 };
