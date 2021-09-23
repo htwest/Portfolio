@@ -21,7 +21,7 @@ export default {
   },
 
   crud: {
-    title: "Ol' Reliable CRUD App",
+    title: "CRUD App",
     summary: "FILL_IN",
     link: "FILL_IN",
   },

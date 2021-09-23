@@ -16,7 +16,15 @@ const Card = ({ handleClick, project }) => {
       onMouseLeave={hover}
       onClick={() => handleClick(project)}
     >
-      <div>{project.title}</div>
+      <div className={styles.cardBox}>
+        <div className={styles.textBoxTop}>
+          <div>{project.title}</div>
+        </div>
+        <div className={styles.gifBox}>{project.title}</div>
+        <div className={styles.textBoxBottom}>
+          <div>{project.title}</div>
+        </div>
+      </div>
     </div>
   );
 };
