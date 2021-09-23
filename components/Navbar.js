@@ -7,6 +7,7 @@ import {
   FaJediOrder,
   FaBalanceScale,
   FaChessKnight,
+  FaMagento,
 } from "react-icons/fa";
 
 const Navbar = ({ openNav, setOpenNav }) => {
@@ -40,6 +41,12 @@ const Navbar = ({ openNav, setOpenNav }) => {
               <FaChessKnight size={40} />
             </Link>
             {openNav ? <span> Skills</span> : null}
+          </div>
+          <div className={styles.icons}>
+            <Link href="/Projects">
+              <FaMagento size={40} />
+            </Link>
+            {openNav ? <span> Projects</span> : null}
           </div>
         </div>
       </nav>
