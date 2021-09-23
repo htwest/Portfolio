@@ -5,6 +5,7 @@
   min-height: 100%;
   height: 100%;
   background-image: url("/HomeBackground.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   transition: 0.5s;
@@ -14,6 +15,7 @@
   min-height: 100%;
   height: 100%;
   background-image: url("/HomeBackground.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-left: 15%;

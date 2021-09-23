@@ -3,6 +3,7 @@
   min-height: 100vh;
   height: 100vh;
   background-image: url("/Skills/SkillsBackground.png");
+  background-size: cover;
   margin-left: 5%;
   transition: 0.5s;
 }
@@ -11,6 +12,7 @@
   min-height: 100vh;
   height: 100vh;
   background-image: url("/Skills/SkillsBackground.png");
+  background-size: cover;
   margin-left: 15%;
   transition: 0.5s;
 }
