@@ -64,3 +64,12 @@
   font-size: 1.5em;
   transform: translate(-10px, 30px) rotate(180deg);
 }
+
+@keyframes deal {
+  0% {
+    margin-top: 100%;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}

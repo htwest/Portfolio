@@ -2,4 +2,15 @@
   display: flex;
   position: fixed;
   bottom: 10px;
+  animation: deal 0.5s 0.5s ease-in forwards;
+  transform: translateY(100%);
+}
+
+@keyframes deal {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
