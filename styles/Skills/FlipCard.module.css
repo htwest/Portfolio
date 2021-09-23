@@ -3,8 +3,6 @@
   background-color: transparent;
   width: 200px;
   height: 300px;
-  /* transform: translate(-398px, 5px); */
-  /* transform: translate(-30px, 5px); */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   animation: draw 0.5s ease-in forwards;
 }
@@ -26,8 +24,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border: black;
-  border-style: double;
+  border-style: ridge;
+  border-width: 5px;
   border-radius: 10px;
   backface-visibility: hidden;
 }
@@ -61,11 +59,13 @@
 
 .skill {
   position: absolute;
+  transform: translate(-10px);
 }
 
 .img {
   width: 200px;
   height: auto;
+  transform: translate(-10px);
 }
 
 @keyframes draw {

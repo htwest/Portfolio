@@ -1,6 +1,6 @@
 .stackedCard {
-  border: black;
-  border-style: double;
+  border-style: ridge;
+  border-width: 5px;
   border-radius: 10px;
   background-color: whitesmoke;
   width: 200px;
