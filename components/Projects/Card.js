@@ -5,6 +5,8 @@ import styles from "../../styles/Projects/Card.module.css";
 const Card = ({ handleClick, project }) => {
   const [selected, setSelected] = useState(false);
 
+  const imgSrc = `./Projects/${project.title}.gif`;
+
   const hover = () => {
     setSelected(!selected);
   };
@@ -20,7 +22,9 @@ const Card = ({ handleClick, project }) => {
         <div className={styles.textBoxTop}>
           <div>{project.title}</div>
         </div>
-        <div className={styles.gifBox}>{project.title}</div>
+        <div className={styles.gifBox}>
+          <img src={imgSrc} />
+        </div>
         <div className={styles.textBoxBottom}>
           <div>{project.title}</div>
         </div>

@@ -15,7 +15,6 @@ const CardHand = ({ handleClick }) => {
       <Card handleClick={handleClick} project={projects.weather} />
       <Card handleClick={handleClick} project={projects.catwalk} />
       <Card handleClick={handleClick} project={projects.gallery} />
-      <Card handleClick={handleClick} project={projects.crud} />
     </div>
   );
 };
