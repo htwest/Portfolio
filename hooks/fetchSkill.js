@@ -1,5 +1,27 @@
-let skills = ["Node", "Javascript", "HTML", "CSS", "React"];
-let allSkills = ["Node", "Javascript", "HTML", "CSS", "React"];
+let skills = [
+  "Node",
+  "ES6",
+  "HTML5",
+  "CSS3",
+  "React",
+  "Bootstrap",
+  "Next.JS",
+  "Express",
+  "SQL/NoSQL",
+  "FireBase",
+];
+let allSkills = [
+  "Node",
+  "ES6",
+  "HTML5",
+  "CSS3",
+  "React",
+  "Bootstrap",
+  "Next.JS",
+  "Express",
+  "SQL/NoSQL",
+  "FireBase",
+];
 let totalSkills = skills.length;
 let skillsIndex = 0;
 
