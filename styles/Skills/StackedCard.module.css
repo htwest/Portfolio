@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative");
+
 .stackedCard {
   border-style: ridge;
   border-width: 5px;
@@ -11,11 +14,38 @@
   transform: translate(245px, 5px);
 }
 
-.img {
+/* .img {
   width: 200px;
   height: auto;
 }
 
 .skill {
   position: absolute;
+} */
+
+.skill {
+  position: absolute;
+  font-size: 1.5em;
+  transform: translate(8px, 5px);
+  font-family: "Cinzel Decorative";
+}
+
+.txtTop {
+  font-family: "Lilita+One";
+  font-size: 2em;
+  transform: translate(-60px, -125px);
+}
+
+.txtBottom {
+  font-family: "Lilita+One";
+  font-size: 2em;
+  transform: rotate(180deg) translate(-65px, -120px);
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(-3px);
 }

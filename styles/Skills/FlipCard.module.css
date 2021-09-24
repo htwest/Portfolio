@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative");
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flipCard {
   background-color: transparent;
@@ -15,7 +18,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  animation: flip 0.5s ease-in forwards;
+  animation: flip 0.3s ease-in forwards;
 }
 
 /* Position the front and back side */
@@ -59,13 +62,29 @@
 
 .skill {
   position: absolute;
-  transform: translate(-10px);
+  font-size: 1.5em;
+  transform: translateY(45px);
+  font-family: "Cinzel Decorative";
+}
+
+.txtTop {
+  font-family: "Lilita+One";
+  font-size: 2em;
+  transform: translate(-75px, -30px);
+}
+
+.txtBottom {
+  font-family: "Lilita+One";
+  font-size: 2em;
+  transform: rotate(180deg) translate(-70px, -120px);
 }
 
 .img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 200px;
-  height: auto;
-  transform: translate(-10px);
+  transform: translate(-3px);
 }
 
 @keyframes draw {

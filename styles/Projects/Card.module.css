@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap");
+
 .card {
   border-style: ridge;
   border-width: 5px;
@@ -34,6 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Rokkitt";
 }
 
 .gifBox {
@@ -54,14 +57,14 @@
 .textBoxTop {
   display: flex;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 2em;
   transform: translate(10px, -30px);
 }
 
 .textBoxBottom {
   display: flex;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 2em;
   transform: translate(-10px, 30px) rotate(180deg);
 }
 
