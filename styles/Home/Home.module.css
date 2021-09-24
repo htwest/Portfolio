@@ -4,7 +4,7 @@
 .containerClose {
   min-height: 100%;
   height: 100%;
-  background-image: url("/Home/HomeBackground.png");
+  background-image: url("/Home/TestImage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
