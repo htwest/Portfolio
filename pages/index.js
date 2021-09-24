@@ -15,7 +15,7 @@ export default function Home({ openNav }) {
       <div className={styles.about}>
         <div className={styles.bio}>
           <h3 id="about-me">About Me</h3>
-          <img src="/Home/Smiley.png" />
+          <img src="/Home/TestImage.png" />
           <p>
             Ever since I was young, I've enjoyed creating. Whether that be
             through writing or art, or most recently, through software, my
