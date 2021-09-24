@@ -5,7 +5,7 @@
   border-width: 5px;
   border-radius: 10px;
   background-color: whitesmoke;
-  width: 250px;
+  width: 230px;
   height: 350px;
   margin: 10px;
   display: flex;
@@ -19,7 +19,7 @@
   border-width: 5px;
   border-radius: 10px;
   background-color: whitesmoke;
-  width: 250px;
+  width: 230px;
   height: 350px;
   margin: 10px;
   display: flex;
@@ -58,14 +58,14 @@
   display: flex;
   width: 100%;
   font-size: 2em;
-  transform: translate(10px, -30px);
+  transform: translate(10px, -20px);
 }
 
 .textBoxBottom {
   display: flex;
   width: 100%;
   font-size: 2em;
-  transform: translate(-10px, 30px) rotate(180deg);
+  transform: translate(-10px, 20px) rotate(180deg);
 }
 
 @keyframes deal {
