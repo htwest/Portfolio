@@ -1,5 +1,6 @@
 .deckContainer {
   display: flex;
+  transform: translateY(-200px);
 }
 
 .topCard {
