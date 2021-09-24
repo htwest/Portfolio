@@ -57,14 +57,14 @@
 .textBoxTop {
   display: flex;
   width: 100%;
-  font-size: 2em;
+  font-size: 1.5em;
   transform: translate(10px, -20px);
 }
 
 .textBoxBottom {
   display: flex;
   width: 100%;
-  font-size: 2em;
+  font-size: 1.5em;
   transform: translate(-10px, 20px) rotate(180deg);
 }
 

@@ -13,7 +13,7 @@ const Card = ({ handleClick, project }) => {
   useEffect(() => {
     setSuit(currentSuit);
   }, [project]);
-  const imgSrc = `./Projects/${project.title}.gif`;
+  const imgSrc = `./Projects/${project.image}.gif`;
 
   const hover = () => {
     setSelected(!selected);
