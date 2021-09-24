@@ -4,6 +4,7 @@ import FlipCard from "./FlipCard";
 import StackedCard from "./StackedCard";
 
 import fetchSkill from "../../hooks/fetchSkill";
+import fetchSuite from "../../hooks/fetchSuite.js";
 
 import styles from "../../styles/Skills/SkillsDeck.module.css";
 
@@ -13,7 +14,9 @@ const SkillsDeck = () => {
   const [lastCard, setLastCard] = useState(false);
   const [stacked, setStacked] = useState(false);
   const [skill, setSkill] = useState(null);
+  const [suit, setSuit] = useState(null);
   const [prevSkill, setPrevSkill] = useState(null);
+  const [prevSuit, setPrevSuit] = useState(null);
 
   const isMounted = useRef(false);
   const cardsFlipped = useRef(0);
@@ -30,12 +33,15 @@ const SkillsDeck = () => {
 
   const handleFlip = () => {
     let { currentSkill, oneLeft, lastSkill } = fetchSkill();
+    let currentSuit = fetchSuite();
+
     cardsFlipped.current++;
     if (cardsFlipped.current === 2) {
       setStacked(true);
     }
     if (cardsFlipped.current > 1) {
       setPrevSkill(skill);
+      setPrevSuit(suit);
     }
     if (lastSkill === true) {
       setLastCard(true);
@@ -44,6 +50,7 @@ const SkillsDeck = () => {
       setOneLeft(true);
     }
     setSkill(currentSkill);
+    setSuit(currentSuit);
   };
 
   return (
@@ -64,8 +71,10 @@ const SkillsDeck = () => {
           onClick={handleFlip}
         />
       )}
-      {stacked ? <StackedCard prevSkill={prevSkill} /> : null}
-      {flipped ? <FlipCard skill={skill} /> : null}
+      {stacked ? (
+        <StackedCard prevSkill={prevSkill} prevSuit={prevSuit} />
+      ) : null}
+      {flipped ? <FlipCard skill={skill} suit={suit} /> : null}
     </div>
   );
 };

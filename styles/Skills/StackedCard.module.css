@@ -6,7 +6,7 @@
   border-width: 5px;
   border-radius: 10px;
   background-color: whitesmoke;
-  width: 200px;
+  width: 220px;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -26,20 +26,19 @@
 .skill {
   position: absolute;
   font-size: 1.5em;
-  transform: translate(8px, 5px);
   font-family: "Cinzel Decorative";
 }
 
 .txtTop {
   font-family: "Lilita+One";
   font-size: 2em;
-  transform: translate(-60px, -125px);
+  transform: translate(-40px, -125px);
 }
 
 .txtBottom {
   font-family: "Lilita+One";
   font-size: 2em;
-  transform: rotate(180deg) translate(-65px, -120px);
+  transform: rotate(180deg) translate(-45px, -125px);
 }
 
 .img {
