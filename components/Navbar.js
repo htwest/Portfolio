@@ -4,10 +4,10 @@ import styles from "../styles/Navbar.module.css";
 
 import {
   FaAlignCenter,
-  FaJediOrder,
-  FaBalanceScale,
+  FaInfoCircle,
+  FaAt,
   FaChessKnight,
-  FaMagento,
+  FaJsSquare,
 } from "react-icons/fa";
 
 const Navbar = ({ openNav, setOpenNav }) => {
@@ -26,25 +26,25 @@ const Navbar = ({ openNav, setOpenNav }) => {
         <div>
           <div className={styles.icons}>
             <Link href="/#about-me">
-              <FaJediOrder size={40} />
+              <FaInfoCircle size={50} />
             </Link>
             {openNav ? <span> About</span> : null}
           </div>
           <div className={styles.icons}>
             <Link href="/Links">
-              <FaBalanceScale size={40} />
+              <FaAt size={50} />
             </Link>
             {openNav ? <span> Links</span> : null}
           </div>
           <div className={styles.icons}>
             <Link href="/Skills">
-              <FaChessKnight size={40} />
+              <FaChessKnight size={50} />
             </Link>
             {openNav ? <span> Skills</span> : null}
           </div>
           <div className={styles.icons}>
             <Link href="/Projects">
-              <FaMagento size={40} />
+              <FaJsSquare size={50} />
             </Link>
             {openNav ? <span> Projects</span> : null}
           </div>

@@ -6,11 +6,12 @@
   z-index: 1; /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: black; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
   text-align: center;
+  /* border-right: 10px solid white; */
 }
 
 .sidebarOpen {
@@ -20,11 +21,12 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
   text-align: center;
+  /* border-right: 10px solid white; */
 }
 
 /* Sidebar Icon */
@@ -34,7 +36,7 @@
 }
 
 .sidebarIcon :hover {
-  color: #818181;
+  color: #9d2c2c;
 }
 
 /* Sidebar Links */
@@ -42,13 +44,13 @@
   color: white;
   display: flex;
   align-items: center;
-  transition: 0s;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
   margin-bottom: 10px;
 }
 
 .icons :hover {
-  color: red;
+  color: #9d2c2c;
 }
 
 /* Sidebar Text */
